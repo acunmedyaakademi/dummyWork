@@ -229,10 +229,22 @@ footer {
 /* footer content start */
 
 .footer-content {
-    display: flex;
-    justify-content: space-around;
-    width: 1920px;
+    width: 1861px;
     margin: 0 auto;
+}
+
+.footer-bottom {
+    border-top: 1px solid #4f4f4f;
+    margin-top: 150px;
+}
+
+.footer-bottom p {
+    padding-top: 30px;
+}
+
+.footer-content-top {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* footer content end */
