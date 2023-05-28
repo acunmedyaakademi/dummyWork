@@ -204,6 +204,7 @@ fieldset {
     justify-content: space-between;
     padding: 29px 0;
     border: 2px solid #C4C4C4;
+    margin-bottom: 30px;
 }
 
 legend {
@@ -228,8 +229,8 @@ legend {
 }
 .banners{
     display: grid;
-    grid-template-columns: minmax(300px, 924px) minmax(auto, auto);
-    grid-template-rows: minmax(200px, 434px) minmax(200px, 434px);
+    grid-template-columns: minmax(300px, 1100px) minmax(auto, auto);
+    grid-template-rows: minmax(200px, 450px) minmax(200px, 434px);
     gap: 30px 29px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -238,9 +239,10 @@ legend {
     margin-bottom: 30px;
 }
 .bannerOne{
-    background: linear-gradient(180deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
+    background: linear-gradient(90deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
     display: flex;
     gap:112px ;
+    grid-area: bannerOne;
 }
 
 .bannerOne .bannerContent{
@@ -263,6 +265,31 @@ legend {
     letter-spacing: 0.01em;
 }
 
+.bannerTwo{
+    display: flex;
+    grid-area: bannerTwo;
+    background: linear-gradient(180deg, rgba(247, 224, 213, 1) 0%, rgb(239, 215, 205) 50%, rgba(210, 189, 179, 1) 100%);
+
+}
+.bannerTwo .bannerContent{
+    padding:70px 94px;
+    width: 448px;
+}
+.bannerThree{
+    display: flex;
+    grid-area: bannerThree;
+    background-color: #E0DDD5;
+
+}
+.bannerThree .bannerContent{
+    margin: auto auto 133px 94px;
+    z-index: 1;
+    
+    
+}
+.bannerThree .bannerContent h1{
+    text-transform: uppercase;
+}
 
 /* MAIN END */
 
