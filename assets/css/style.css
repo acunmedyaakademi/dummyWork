@@ -162,6 +162,30 @@ legend{
     text-transform:uppercase ;
     color: #000;
 }
+.banners{
+    display: flex;
+}
+.bannerUp{
+    display: flex;
+}
+.bannerText{
+background: linear-gradient(270deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
+padding: 82px 112px;
+
+}
+.bannerText h3{
+    width: 251px;
+}
+.bannerText p{
+    font-family: 'Roboto Light';
+    font-size: 22px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    color: #000;
+    margin-bottom: 51px;
+}
+
+
 /* MAIN END */
 
 /* ------____------- */
