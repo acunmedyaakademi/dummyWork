@@ -151,6 +151,7 @@ main {
 fieldset{
     display: flex;
     justify-content: space-between;
+    padding: 29px 0;
 }
 legend{
     text-align: center;
