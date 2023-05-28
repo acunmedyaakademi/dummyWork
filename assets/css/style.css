@@ -2,5 +2,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto&display=swap%27');
 
 :root{
-    
+   --black: #000;
+   --secondry-black: #3F3F3F;
+   --white: #fff;
+   --primary-gray: #BDBDBD;
+   --secondry-gray: #828282;
+   --third-gray: #4F4F4F;
+   --main-color: #EB5757;
+   --bg-light-blue: #E6F1FA;
 }
+
+*{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 110px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+h2 {
+    font-size: 86px;
+    line-height: 86px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+h3 {
+    font-size: 56px;
+    line-height: 72px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+h4 {
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+
+h5 {
+    font-size: 26px;
+    line-height: 38.53px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+h6 {
+    font-size: 24px;
+    line-height: 68px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.graySpan {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--primary-gray);
+}
+
+.blackSpan {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+}
+
+.boldSpan {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--black);
+}
+
+.btn {
+    border:2px solid var(--black);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: var(--black);
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button-black {
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.button-black img {
+    width: 15px;
+    height: 15px;
+}
+
+.button-black:hover {
+    background-color: rgb(28, 28, 28);
+}
+
+.button-white {
+    border: 2px solid #C4C4C4;
+    background-color: white;
+    padding: 18px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.button-white img {
+    width: 15px;
+    height: 15px;
+}
+
+
+.button-white:hover {
+    background-color: #C4C4C4;
+}
+
+
+/* /////////--------------------------------------////////// */
+
+/* HEADER START */
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+/* HEADER END */
+
+/* ------____------- */
+
+/* MAIN START */
+main {
+    padding: 21px 21px 0 21px;
+}
+/* MAIN END */
+
+/* ------____------- */
+
+/* FOOTER START */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+/* FOOTER END */
