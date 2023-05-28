@@ -326,6 +326,173 @@ legend {
 footer {
     background-color: var(--black);
     color: var(--white);
+    padding: 63px 21px;
 }
+
+/* footer content start */
+
+.footer-content {
+    width: 1861px;
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    border-top: 1px solid #4f4f4f;
+    margin-top: 150px;
+}
+
+.footer-bottom p {
+    padding-top: 30px;
+}
+
+.footer-content-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer content end */
+/* links-column start */
+
+.links-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-column a {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.links-column span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.links-column a p {
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+/* links-column end */
+/* contact-us start */
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.contact-us div {
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.contact {
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* contact-us end */
+/* follow-us start  */
+
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow-us a {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.follow-us p {
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.follow-us span {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.join-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-us span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.join-us p {
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.footer-email {
+    width: 280px;
+    height: 40px;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+.footer-email::placeholder {
+    color: white;
+}
+
+
+.btn-subscribe {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: inline-block;
+    padding: auto;
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* follow-us end */
 
 /* FOOTER END */
