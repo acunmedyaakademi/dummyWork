@@ -125,7 +125,6 @@ h6 {
     background-color: #C4C4C4;
 }
 
-
 /* /////////--------------------------------------////////// */
 
 /* HEADER START */
@@ -149,6 +148,7 @@ main {
     padding: 21px 21px 0 21px;
 }
 fieldset{
+    border: 2px solid #C4C4C4;
     display: flex;
     justify-content: space-between;
     padding: 29px 0;
@@ -162,27 +162,52 @@ legend{
     text-transform:uppercase ;
     color: #000;
 }
+.brand {
+    width: 235px;
+    height: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2.4s;
+}
+.brand:hover {
+    background-color:#F0F2F2;
+}
 .banners{
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(300px, 924px) minmax(auto, auto);
+    grid-template-rows: minmax(200px, 434px) minmax(200px, 434px);
+    gap: 30px 29px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "bannerOne bannerThree"
+    "bannerTwo bannerThree";
+    margin-bottom: 30px;
 }
-.bannerUp{
+.bannerOne{
+    background: linear-gradient(180deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
     display: flex;
+    gap:112px ;
 }
-.bannerText{
-background: linear-gradient(270deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
-padding: 82px 112px;
 
+.bannerOne .bannerContent{
+    width: 369px;
+    padding: 83px 0;
 }
-.bannerText h3{
-    width: 251px;
+
+.bannerContent h3{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: uppercase;
+    width: 221px;
 }
-.bannerText p{
-    font-family: 'Roboto Light';
+.bannerContent p{
+    margin-bottom: 51px;
+    font-family: 'Roboto';
     font-size: 22px;
     line-height: 37px;
     letter-spacing: 0.01em;
-    color: #000;
-    margin-bottom: 51px;
 }
 
 
