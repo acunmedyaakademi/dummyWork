@@ -342,9 +342,43 @@ legend {
 
 }
 .blog{
-    background-color: #F8F9FB;
+    background-color: darkcyan;
 }
-
+.blog>h5{
+    padding-top: 46px;
+    padding-left: 21px;
+}
+.blogCards{
+    padding: 46px 21px;
+}
+.blogCard{
+    width: 447px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 24px 17px;
+}
+.blogCard h6{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    margin-bottom: 21px;
+}
+.blogCard>h5{
+    margin-bottom: 32px;
+}
+.blogCard p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.01em;
+    border-bottom:2px solid #000;
+    padding-bottom: 100px;
+} 
+.blogOwner{
+    font-size: 13px;
+    line-height: 37px;
+    color: #4F4F4F;
+}
 /* MAIN END */
 
 /* ------____------- */
