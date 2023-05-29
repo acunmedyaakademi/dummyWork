@@ -322,6 +322,7 @@ legend {
   display: flex;
   gap: 96px;
   align-items: center;
+  margin-bottom: 81px;
 }
 .exploreContent h3{
     border-top: 2px solid #000;
@@ -340,6 +341,10 @@ legend {
     color: #000;
 
 }
+.blog{
+    background-color: #F8F9FB;
+}
+
 /* MAIN END */
 
 /* ------____------- */
