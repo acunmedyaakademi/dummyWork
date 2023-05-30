@@ -1,4 +1,7 @@
 const productsContainerElement = document.querySelector('.shopSomeCards');
+const buttonLoadMore = document.querySelector('.shopSomeButton');
+
+
 
 
 const createProductHtml = (title, category, thumbnail, price) =>
@@ -13,5 +16,9 @@ const createProductHtml = (title, category, thumbnail, price) =>
 
 
 
+buttonLoadMore.addEventListener('click', () => {
+    productsContainerElement.classList.add('show-all-cards');
+})
 
-export {productsContainerElement, createProductHtml}
+
+export {productsContainerElement, createProductHtml, buttonLoadMore}
