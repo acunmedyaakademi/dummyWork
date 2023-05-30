@@ -311,6 +311,10 @@ legend {
     margin-bottom: 63px;
 }
 
+.shopSomeCards .card img {
+    aspect-ratio: 3/2;
+}
+
 .shopSomeList label {
     font-family: 'Roboto';
     font-weight: 400;
