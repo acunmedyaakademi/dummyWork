@@ -272,18 +272,21 @@ legend {
     display: flex;
     grid-area: bannerThree;
     background-color: #E0DDD5;
+    position: relative;
 
 }
 
 .bannerThree .bannerContent {
-    margin: auto auto 133px 94px;
-    z-index: 1;
+    margin: 0 0 133px 37px;
+    position: absolute;
+    top: 50%;
 
 
 }
 
 .bannerThree .bannerContent h1 {
     text-transform: uppercase;
+    width: 400px;
 }
 
 /* shopSomeWear start */
