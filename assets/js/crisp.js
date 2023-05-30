@@ -14,7 +14,6 @@ function getAndListProducts() {
 
             helperProducts.productsContainerElement.innerHTML += helperProducts.createProductHtml(
                 product.title, product.category, product.thumbnail, product.price
-
             );       
         });
         
@@ -24,11 +23,8 @@ function getAndListProducts() {
         categorySet.forEach(category => {
         helperCategory.shopCategory.innerHTML += helperCategory.createCategory(
             category
-        )
-    })
+        )});
       
-
-    
     });
 };
 
