@@ -315,6 +315,14 @@ legend {
     aspect-ratio: 3/2;
 }
 
+.shopSomeCards .card:nth-child(n+9) {
+    display: none;
+}
+
+.shopSomeCards.show-all-cards .card:nth-child(n+9) {
+    display: block;
+}
+
 .shopSomeList label {
     font-family: 'Roboto';
     font-weight: 400;
@@ -331,6 +339,7 @@ legend {
 .shopSomeButton {
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 /* shopSomeWear end */
