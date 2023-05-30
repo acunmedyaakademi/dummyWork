@@ -330,7 +330,6 @@ legend {
 .explore {
     display: flex;
     gap: 96px;
-    align-items: center;
     margin-bottom: 81px;
 }
 
