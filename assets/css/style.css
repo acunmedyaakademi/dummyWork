@@ -10,6 +10,7 @@
     --third-gray: #4F4F4F;
     --main-color: #EB5757;
     --bg-light-blue: #E6F1FA;
+    --border: #C4C4C4;
 }
 
 * {
@@ -51,6 +52,7 @@ h5 {
 h6 {
     font-size: 24px;
     font-weight: 400;
+    line-height: 68px;
 }
 
 .graySpan {
@@ -291,12 +293,14 @@ legend {
 
 /* shopSomeWear start */
 .shopSomeWear {
-    display: flex;
+    display: grid;
+    grid-template-columns: 394px auto;
     gap: 30px;
+    margin-bottom: 63px;
 }
 
 .shopSomeMenu {
-    width: 395px;
+    border-right: 1px solid var(--border);;
 }
 
 
@@ -304,6 +308,25 @@ legend {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 48px 26px;
+    margin-bottom: 63px;
+}
+
+.shopSomeList label {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    padding: 23px 0;
+    text-transform: uppercase;
+    color: var(--secondry-black);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    user-select: none;
+}
+
+.shopSomeButton {
+    display: block;
+    margin: 0 auto;
 }
 
 /* shopSomeWear end */
