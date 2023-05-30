@@ -1,5 +1,6 @@
 import * as helperProducts from './helper/helperProducts.js';
 import * as helperCategory from './helper/helperCategory.js';
+import * as helperBlog from './helper/helperBlog.js';
 
 
 function getAndListProducts() {
@@ -25,10 +26,25 @@ function getAndListProducts() {
         )
     })
       
+
     
     });
 }
 
+// [...json.products].splice(0, 6)
+function getAndListPost() {
+    fetch("https://dummyjson.com/posts")
+    .then(res => res.json())
+    .then(json => {
+      let posts = json.posts;
 
+       [...posts].splice(0,4).forEach(post => {
+            helperBlog.blogCards.innerHTML += helperBlog.createBlog(
+                post.id,post.title,post.body
+            );
+       });
+    });
+}
 
 getAndListProducts();
+getAndListPost();
