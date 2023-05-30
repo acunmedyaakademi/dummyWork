@@ -30,10 +30,24 @@ function getAndListProducts() {
     });
 };
 
+const searchInput = document.querySelector('.hidden');
+const searchIcon = document.querySelector('.searchIcon a');
 
+// Tıklama olayını belge üzerinde dinle
+document.addEventListener('click', (event) => {
+    const target = event.target;
+  
+    // Tıklanan öğe arama simgesi değilse
+    if (!target.closest('.searchIcon')) {
+        
+        searchInput.classList.add('hidden');
+    }
+});
+
+searchIcon.addEventListener('click', (event) => {
+    event.stopPropagation();
+    searchInput.classList.toggle('hidden');
+});
 
 getAndListProducts();
 
-function shuffleProducts() {
-    products.sort(() => Math.random() - 0.5);
-};
