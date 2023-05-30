@@ -73,13 +73,14 @@ h6 {
 
 .btn {
     border: 2px solid var(--black);
-    padding: 15px 30px;
+    padding: 15px 40px;
     text-transform: uppercase;
     color: var(--black);
     letter-spacing: 0.5px;
     line-height: 27px;
     font-size: 18px;
     font-weight: 500;
+    display: inline-block;
 }
 
 .button-black {
@@ -275,6 +276,81 @@ legend {
 .bannerThree .bannerContent h1{
     text-transform: uppercase;
 }
+
+/* shopSomeWear start */
+.shopSomeWear {
+    display: flex;
+    gap: 30px;
+}
+
+.shopSomeMenu {
+    width: 395px;
+}
+
+
+.shopSomeCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px 26px;
+}
+
+/* shopSomeWear end */
+
+/* shoppingWithoutLimits start */
+.shoppingWithoutLimits {
+    height: 467px;
+    margin-bottom: 67px;
+}
+
+.limitsLeft {
+    position: absolute;
+    height: 467px;
+    width: 1357px;
+    background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 69.27%, rgba(255, 255, 255, 0) 100%);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.limitsMain {
+    padding: 77px auto 78px 269px;
+    width: 639px;
+    position: relative;
+}
+
+.limitsBorder {
+    border-top: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    width: 602px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 37px;
+}
+
+.limitsContent h3 {
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    padding-top: 19px;
+}
+
+.limitsContent p {
+    font-family: 'Roboto Light';
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+}
+
+.limitsImg {
+    position: absolute;
+    right: 21px;
+    width: 1210px;
+    height: 467px;
+}
+
+/* shoppingWithoutLimits end */
 
 /* featuredItems start */
 .featured {
