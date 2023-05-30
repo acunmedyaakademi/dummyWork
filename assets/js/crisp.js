@@ -13,12 +13,13 @@ function getAndListProducts() {
         products.forEach(product => {
 
             helperProducts.productsContainerElement.innerHTML += helperProducts.createProductHtml(
-                product.title, product.category, product.thumbnail, product.price
+              product.id,product.title, product.category, product.thumbnail, product.price
+
             );       
         });
         
         let categoryMap = products.map(item => item.category);
-        let categorySet = [...new Set(categoryMap)];
+        let categorySet = [...new Set(categoryMap)].sort();
 
         categorySet.forEach(category => {
         helperCategory.shopCategory.innerHTML += helperCategory.createCategory(
@@ -28,12 +29,14 @@ function getAndListProducts() {
     });
 };
 
-// [...json.products].splice(0, 6)
+// Blog sayfasi
 function getAndListPost() {
     fetch("https://dummyjson.com/posts")
     .then(res => res.json())
     .then(json => {
       let posts = json.posts;
+      posts.sort(() => Math.random() - 0.5);
+
 
        [...posts].splice(0,4).forEach(post => {
             helperBlog.blogCards.innerHTML += helperBlog.createBlog(
@@ -47,11 +50,11 @@ function getAndListPost() {
 const searchInput = document.querySelector('.hidden');
 const searchIcon = document.querySelector('.searchIcon a');
 
-// Tıklama olayını belge üzerinde dinle
+
 document.addEventListener('click', (event) => {
     const target = event.target;
   
-    // Tıklanan öğe arama simgesi değilse
+
     if (!target.closest('.searchIcon')) {
         
         searchInput.classList.add('hidden');

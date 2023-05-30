@@ -4,8 +4,8 @@ const buttonLoadMore = document.querySelector('.shopSomeButton');
 
 
 
-const createProductHtml = (title, category, thumbnail, price) =>
-`<div class="card">
+const createProductHtml = (id,title, category, thumbnail, price) =>
+`<div class="card hiden" data-id='${id}'>
     <a href="#"><img src="${thumbnail}" alt="${title}"></a>
     <div>
         <span class="graySpan">${category}</span>
