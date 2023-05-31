@@ -25,6 +25,34 @@ function getAndListProducts() {
         helperCategory.shopCategory.innerHTML += helperCategory.createCategory(
             category
         )});
+
+
+        helperCategory.shopCategory.addEventListener('change', filterProducts);
+        function filterProducts() {
+            debugger
+            // Secilen kategorileri alın
+            const selectedCategories = Array.from(shopCategory.querySelectorAll('input[type="checkbox"]:checked')).map(checkbox => checkbox.name);
+            
+            // Urunleri filtrele
+            const filteredProducts = products.filter(product => selectedCategories.includes(product.category));
+            
+            // Urun listesini guncelle ekrana bas
+            helperProducts.productsContainerElement.innerHTML = '';
+            filteredProducts.forEach(product => {
+                helperProducts.productsContainerElement.innerHTML += helperProducts.createProductHtml(
+                    product.id, product.title, product.category, product.thumbnail, product.price
+                );
+            });
+
+            // Tum checkboxlar unchecked ise, tum urunleri goster 
+            if (selectedCategories.length === 0) {
+                products.forEach(product => {
+                    helperProducts.productsContainerElement.innerHTML += helperProducts.createProductHtml(
+                        product.id, product.title, product.category, product.thumbnail, product.price
+                    );
+                });
+            };
+        };
       
     });
 };
