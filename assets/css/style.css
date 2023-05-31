@@ -10,6 +10,7 @@
     --third-gray: #4F4F4F;
     --main-color: #EB5757;
     --bg-light-blue: #E6F1FA;
+    --border: #C4C4C4;
 }
 
 * {
@@ -51,6 +52,7 @@ h5 {
 h6 {
     font-size: 24px;
     font-weight: 400;
+    line-height: 68px;
 }
 
 .graySpan {
@@ -73,13 +75,14 @@ h6 {
 
 .btn {
     border: 2px solid var(--black);
-    padding: 15px 30px;
+    padding: 15px 40px;
     text-transform: uppercase;
     color: var(--black);
     letter-spacing: 0.5px;
     line-height: 27px;
     font-size: 18px;
     font-weight: 500;
+    display: inline-block;
 }
 
 .button-black {
@@ -127,6 +130,10 @@ header {
     display: none;
 }
 
+.show {
+    display: block;
+}
+
 .menu a {
     color: var(--white);
     font-size: 14px;
@@ -149,7 +156,6 @@ header {
 
 .menu .searchIcon i {
     color: var(--white);
-    cursor: pointer;
 }
 
 .shopping {
@@ -271,23 +277,156 @@ legend {
     display: flex;
     grid-area: bannerThree;
     background-color: #E0DDD5;
+    position: relative;
 
 }
 
 .bannerThree .bannerContent {
-    margin: auto auto 133px 94px;
-    z-index: 1;
+    margin: 0 0 133px 37px;
+    position: absolute;
+    top: 50%;
 
 
 }
 
 .bannerThree .bannerContent h1 {
     text-transform: uppercase;
+    width: 400px;
 }
+
+/* shopSomeWear start */
+.shopSomeWear {
+    display: grid;
+    grid-template-columns: 394px auto;
+    gap: 30px;
+    margin-bottom: 63px;
+}
+
+.shopSomeMenu {
+    border-right: 1px solid var(--border);;
+}
+
+
+.shopSomeCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px 26px;
+    margin-bottom: 63px;
+}
+
+.shopSomeCards .card {
+    transition: all ease-in 0.2s;
+}
+
+.shopSomeCards .card:hover {
+    box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+    transform: scale(1.02);
+}
+
+
+.shopSomeCards .card img {
+    aspect-ratio: 3/2;
+}
+
+.shopSomeCards .card:nth-child(n+9) {
+    display: none;
+}
+
+.shopSomeCards.show-all-cards .card:nth-child(n+9) {
+    display: block;
+}
+
+.shopSomeList label {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    padding: 23px 0;
+    text-transform: uppercase;
+    color: var(--secondry-black);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    user-select: none;
+    transition: all ease-in 0.2s;
+}
+
+.shopSomeList label:hover {
+    transform: scale(1.02);
+    padding-left: 5px;
+    background-color: var(--border);
+}
+
+.shopSomeButton {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* shopSomeWear end */
+
+/* shoppingWithoutLimits start */
+.shoppingWithoutLimits {
+    height: 467px;
+    margin-bottom: 67px;
+}
+
+.limitsLeft {
+    position: absolute;
+    height: 467px;
+    width: 1357px;
+    background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 69.27%, rgba(255, 255, 255, 0) 100%);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.limitsMain {
+    padding: 77px auto 78px 269px;
+    width: 639px;
+    position: relative;
+}
+
+.limitsBorder {
+    border-top: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    width: 602px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 37px;
+}
+
+.limitsContent h3 {
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    padding-top: 19px;
+}
+
+.limitsContent p {
+    font-family: 'Roboto Light';
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+}
+
+.limitsImg {
+    position: absolute;
+    right: 21px;
+    width: 1210px;
+    height: 467px;
+}
+
+/* shoppingWithoutLimits end */
 
 /* featuredItems start */
 .featured {
     margin-bottom: 79px;
+}
+
+.populer {
+    margin-bottom: 118px;
 }
 
 .featuredItems {
@@ -330,7 +469,6 @@ legend {
 .explore {
     display: flex;
     gap: 96px;
-    align-items: center;
     margin-bottom: 81px;
 }
 
@@ -363,6 +501,8 @@ legend {
 }
 
 .blogCards {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
     padding: 46px 21px;
 }
 
