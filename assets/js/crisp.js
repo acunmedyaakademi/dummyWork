@@ -29,7 +29,6 @@ function getAndListProducts() {
 
         helperCategory.shopCategory.addEventListener('change', filterProducts);
         function filterProducts() {
-            debugger
             // Secilen kategorileri alın
             const selectedCategories = Array.from(shopCategory.querySelectorAll('input[type="checkbox"]:checked')).map(checkbox => checkbox.name);
             
