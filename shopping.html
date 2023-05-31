@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRISP</title>
     <link rel="stylesheet" href="assets/css/style.css?v=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -53,26 +54,51 @@
         <h4 class="shopping-page-title">Shopping Cart</h4>
 
         <section class="basket">
-
-            <table class="basket-contents">
-                <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Size</th>
-                    <th>Quantity</th>
+            <div>
+                <table class="basket-contents">
+                    <tr>
+                        <th class="th-product">Product</th>
+                        <th class="th-price">Price</th>
+                        <th>Size</th>
+                    <th class="th-quantity">Quantity</th>
                     <th>Total</th>
                 </tr>
-                <tr>
-                    <td>Peter</td>
-                    <td>120,00 EUR</td>
-                    <td>W32</td>
-                    <td>1</td>
-                    <td>120,00 EUR</td>
-                    <td>button</td>
+                <tr class="table-line">
+                    <td class="table-product">
+                        <img src="assets/img/shopping-ornek.jpg" alt="">
+                        <div>
+                            <p>Angels malu zip jeans slim black used</p>
+                            <div class="product-color-btn">
+                                <div class="product-color-btn-inside"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="table-price"><p>120,00 EUR</p></td>
+                    <td class="table-size"><p>W32</p></td>
+                    <td class="table-quantity">
+                        <table>
+                            <tr>
+                                <td><a href=""><i class="fa-solid fa-minus"></i></a></td>
+                                <td><span>1</span></td>
+                                <td><a href=""><i class="fa-solid fa-plus"></i></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="table-total"><p>120,00 EUR</p></td>
+                    <td class="table-buttons">
+                        <div>
+                            <a href=""><img src="assets/img/shopping-favori.svg" alt=""></a>
+                            <a href=""><img src="assets/img/shopping-duzenle.svg" alt=""></a>
+                            <a href=""><img src="assets/img/shopping-çıkar.svg" alt=""></a>
+                        </div>
+                    </td>
                 </tr>
-            </table>
-
-
+                </table>
+                <div class="shopping-buttons">
+                    <a href="" class="shopping-btn">continue shopping</a>
+                    <a href="" class="shopping-btn">clear shopping cart</a>
+                </div>
+            </div>
             <div class="pricing">
                 <div class="delivery-information">
                     <h6 class="pricing-h">Apply Discount Code</h6>

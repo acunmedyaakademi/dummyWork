@@ -641,8 +641,28 @@ footer {
     gap: 70px;
 }
 
+/* TABLE START */
+
+.product-color-btn {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #C4C4C4;
+}
+
+.product-color-btn-inside {
+    margin: auto;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #5884AA;
+}
+
+
 .basket-contents {
     border-collapse: collapse;
+    margin-bottom: 24px;
 }
 
 .basket-contents th {
@@ -662,6 +682,91 @@ td {
     text-align: left;
 }
 
+.table-product {
+    display: flex;
+    gap: 18px;
+}
+
+.th-product {
+    width: 300px;
+}
+
+.th-price {
+    width: 90px;
+}
+
+.th-quantity {
+    width: 120px;
+}
+
+
+.table-product p {
+    width: 187px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.table-price p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.table-size p { 
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.table-total p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.table-quantity table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #C4C4C4;
+}
+
+.table-quantity table tr td {
+    text-align: center;
+}
+
+.fa-minus , .fa-plus {
+    color: #C4C4C4;
+}
+
+.table-quantity table tr td span {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.table-buttons {
+    width: 100px;
+}
+
+.table-buttons div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .basket-contents tr:last-child {
     border-bottom: 1px solid #ddd;
 }
@@ -669,6 +774,36 @@ td {
 .basket-contents tr:first-child {
     border-bottom: 1px solid #ddd;
 }
+
+/* TABLE END */
+
+/* shopping buttons start */
+
+.shopping-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-btn {
+    background: #F0F2F2;
+    border: 2px solid #C4C4C4;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #828282;
+    padding: 7px 20px;
+    transition: 0.3s;
+}
+
+.shopping-btn:hover  {
+    background: #C4C4C4;
+}
+
+/* shopping buttons end */
 
 /* pricing section start */
 
